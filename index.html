@@ -80,12 +80,16 @@
                         <textarea class="textarea-comment" name="comment" id="comment" placeholder="Введите текст"></textarea>
                         </div>
 
-                        <br />
-                        <input type="checkbox" name="contract" value="contract" id="contract">
+                        <div class="form-checkbox">
+                        <input class="checkbox" type="checkbox" name="contract" value="contract" id="contract">
+                        <span class="icon-agree">
+                            <svg class="icon-vector" width='16' height='15'>
+                                <use href="./images/icons.svg#icon-vector-1"></use>
+                            </svg>
+                        </span>
                         <label for="contract">Соглашаюсь с рассылкой и принимаю  <a class="contract-link" href="">Условия договора</a></label>
-        
-                        <br />
-                        <button type="submit">Отправить</button>
+                        </div>
+                        <button class="form-button" type="submit">Отправить</button>
                     </form>
                 </div>
             </div>
@@ -272,6 +276,14 @@
                     <a href="https://www.linkedin.com/" target="_blank" class="join-block-link"><svg class="network-join-icon" width='20' height='20'><use href="./images/icons.svg#icon-linkedin"></use></svg></a>
                 </li>
             </ul>            
+        </div>
+        <div class="subscribe">
+            <form action="" autocomplete="off">
+                <p class="subscribe-text">Подпишитесь на рассылку</p>
+                <label class="subscribe-label" for="mail"></label>
+                <input class="subscribe-input" type="email" name="mail" id="mail" placeholder="E-mail">
+                <button class="subscribe-button" type="button">Подписаться <svg class="subscribe-icon" width='24' height='24'><use href="./images/icons.svg#icon-send"></use></svg></button>
+            </form>
         </div>
         </div>
     </footer>
